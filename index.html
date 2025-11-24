@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noor Ul Amin Jhanjhi — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav" aria-label="Primary navigation">
+      <div class="logo">Noor Ul Amin Jhanjhi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile / Hamburger Navigation -->
+    <nav id="hamburger-nav" aria-label="Mobile navigation">
+      <div class="logo">Noor Ul Amin Jhanjhi</div>
+      <div class="hamburger-menu">
+        <div
+          class="hamburger-icon"
+          role="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          tabindex="0"
+          onclick="toggleMenu()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="menu-links" aria-hidden="true">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Noor's profile picture" />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Noor Ul Amin Jhanjhi</h1>
+        <p class="section__text__p2">CS Student | AI and Data Science Enthusiast</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn"
+            class="icon"
+            role="link"
+            tabindex="0"
+            onclick="location.href='https://www.linkedin.com/in/noor-ul-amin-jhanjhi-aa685b35b/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Github"
+            class="icon"
+            role="link"
+            tabindex="0"
+            onclick="location.href='https://github.com/noorlol2005'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Awards</h3>
+              <p>Taylor's Dean's List Award <br />2024 & 2025 Feb. Semesters</p>
+            </div>
+
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>IGCSE from Taylor's Intl' School (Puchong) <br />A-Levels from Taylor's College (Subang)</p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              I am a computer science student focused on AI and data science with
+              strong interest in frontend development. I enjoy building user-friendly
+              interfaces and learning new technologies to bridge the gap between
+              visual design and data-driven features. I have a personal passion for 
+              making visualizations and learning new things.I make YouTube cartoon-looking documentaries to
+              simply explain complex Historical matters in my free time.
+            </p>
+            <br />
+            <p>I am fluent in English and Urdu. I can also speak Arabic and Sindhi. I am based in Subang Jaya,
+                Selangor where I have been living for the last 7 years.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title"> Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Data Visualization, Analysis, and preprocessing</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>HTML, CSS and JavaScript</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Microsoft Office Suite</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>MySQL</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Java Programming</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Python</h3><p>Intermediate</p></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Non-Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Leadership skills</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Discipline & Honesty in work</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Problem Solving Skills</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="icon" class="icon" />
+                <div><h3>Curiosity to learn new stuff</h3></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section__text__p1">A Peek at some of my</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 1 starts from next line -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Haze Alert App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/noorlol2005/oop-haze-alert-app'">View Project</button>
+            </div>
+          </div>
+          <!-- Project 1 ends at the div above -->
+          
+          <!-- Project 2 begins with the div below -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Sky Runner Game</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/noorlol2005/skyrunner-game'">View Project</button>
+            </div>
+          </div>
+          <!-- Project 2 ends at the div above -->
+
+          <!-- Project 3 begins with the div below -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">English Latin to Cyrillic script convertor</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/noorlol2005/English_Latin_to_Cyrillic_convertor-'">View Project</button>
+            </div>
+          </div>
+          <!-- Project 3 ends at the div above -->
+        </div>
+
+        <!-- See more projects button (links to GitHub profile) -->
+        <div class="btn-container" style="justify-content:center; margin-top: 2rem; width:100%;">          
+         <!-- Replace your existing "See More Projects on My GitHub" button block with this inside the Projects section -->
+<div class="projects-footer">
+  <h3 class="projects-cta">See More Projects:</h3>
+  <button
+    class="btn btn-color-2 github-cta"
+    onclick="location.href='https://github.com/noorlol2005'"
+    aria-label="See more projects on my GitHub"
+  >
+    My GitHub
+  </button>
+</div>
+
+
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#publications'"
+      />
+    </section>
+
+    <!-- PUBLICATIONS (replaced with a wider card that fits the page) -->
+    <section id="publications">
+      <p class="section__text__p1">Read My</p>
+      <h1 class="title">Publications</h1>
+
+      <div class="section-container" style="justify-content:center;">
+        <div class="publications-card">
+          <!-- GitHub icon on the left -->
+          <img src="./assets/publication.png" alt="GitHub icon" class="pub-icon" />
+
+          <div class="pub-content">
+            <h2 class="experience-sub-title">Pokémon Classification Using Convolutional Neural Networks: A Deep Learning Approach for Fine-Grained Image Recognition
+</h2>
+            <p>
+              Noor Ul Amin, Syed Muhammad Dayyan Shah, Shadman Sakib Sadvi, Al-Hamza Habeb Waed Awad
+            </p>
+            
+            <p>Preprints. 2025</p>
+
+            <div class="btn-container" style="margin-top:1rem;">
+              <!-- If you have a link/file for the publication, replace the href below -->
+              <button class="btn btn-color-2" onclick="window.open('https://www.researchgate.net/publication/389103867_Pokemon_Classification_Using_Convolutional_Neural_Networks_A_Deep_Learning_Approach_for_Fine-Grained_Image_Recognition')">
+                View
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add this inside the #publications section (below your existing .publications-card) -->
+<div class="publications-card">
+  <!-- Optional icon on the left (use github.png or another icon) -->
+  <img src="./assets/publication.png" alt="Publication icon" class="pub-icon" />
+
+  <div class="pub-content">
+    <h2 class="experience-sub-title">The Rise of GPS Spoofing Attacks on Drones in the Russia-Ukraine War
+</h2>
+    <p>
+        Noor Ul Amin Jhanjhi, Fardeen Sameer Khan, Mohamud Abdi, Hans Andre Bin Azwan Rasyid, Shahriar Hossain Istiq, Liu Jiakang, Shadman Sakib Sadvi
+    </p>
+    <p>TechRxiv. 2025</p>
+
+    <div class="btn-container" style="margin-top:1rem;">
+      <!-- Replace the href with the real URL or file path -->
+      <button class="btn btn-color-2" onclick="window.open('https://www.researchgate.net/publication/393526040_The_Rise_of_GPS_Spoofing_Attacks_on_Drones_in_the_Russia-Ukraine_War')">
+        View
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Add this inside the #publications section (below your existing .publications-card) -->
+<div class="publications-card">
+  <!-- Optional icon on the left (use github.png or another icon) -->
+  <img src="./assets/publication.png" alt="Publication icon" class="pub-icon" />
+
+  <div class="pub-content">
+    <h2 class="experience-sub-title">The Role and Application of Hypervisors in Modern Organizations</h2>
+    <p>
+      Noor Ul Amin, Ali Danial Shahzad, Muhammad Hamza Abid, Muhammad Yamin Muiz, Temirlan Suleimanov, Muhammad Shabir Abdul Razick
+    </p>
+    <p>Preprints. 2025</p>
+
+    <div class="btn-container" style="margin-top:1rem;">
+      <!-- Replace the href with the real URL or file path -->
+      <button class="btn btn-color-2" onclick="window.open('https://www.researchgate.net/publication/388242816_The_Role_and_Application_of_Hypervisors_in_Modern_Organizations')">
+        View
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Add this inside the #publications section (below your existing .publications-card) -->
+<div class="publications-card">
+  <!-- Optional icon on the left (use github.png or another icon) -->
+  <img src="./assets/publication.png" alt="Publication icon" class="pub-icon" />
+
+  <div class="pub-content">
+    <h2 class="experience-sub-title">Leveraging Data Science for Enhanced Academic Outcomes: Insights from the Student Performance Dataset
+</h2>
+    <p>
+      Hammad Ruxshan Juhardeen, Noor Ul Amin, Swafa Salim Said Omar, Sakina Hussein Meena
+    </p>
+    <p>Preprints. 2025</p>
+
+    <div class="btn-container" style="margin-top:1rem;">
+      <!-- Replace the href with the real URL or file path -->
+      <button class="btn btn-color-2" onclick="window.open('https://www.researchgate.net/publication/388042179_Leveraging_Data_Science_for_Enhanced_Academic_Outcomes_Insights_from_the_Student_Performance_Dataset')">
+        View
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Add this inside the #publications section (below your existing .publications-card) -->
+<div class="publications-card">
+  <!-- Optional icon on the left (use github.png or another icon) -->
+  <img src="./assets/publication.png" alt="Publication icon" class="pub-icon" />
+
+  <div class="pub-content">
+    <h2 class="experience-sub-title">Telehealth Monitoring System for Chronic Disease Management</h2>
+    <p>
+      Noor Ul Amin, Mohamad Fayyadh bin Abdul Aziz, Dinesh A/L Daveandran, Tan Yung Eun, Alysha Yasmine Binti M Yahya
+    </p>
+    <p>International Journal of Emerging Multidisciplinaries: Computer Science & Artificial Intelligence. 2024
+</p>
+
+    <div class="btn-container" style="margin-top:1rem;">
+      <!-- Replace the href with the real URL or file path -->
+      <button class="btn btn-color-2" onclick="window.open('https://www.researchgate.net/publication/380280918_Telehealth_Monitoring_System_for_Chronic_Disease_Management')">
+        View
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- See more projects button (links to GitHub profile) -->
+<div class="btn-container" style="justify-content:center; margin-top: 2rem; width:100%;">          
+ <!-- Replace your existing "See More Projects on My GitHub" button block with this inside the Projects section -->
+<div class="projects-footer">
+  <h3 class="projects-cta">See More Publications:</h3>
+  <button
+    class="btn btn-color-2 github-cta"
+    onclick="location.href='https://www.researchgate.net/profile/Noor-Ul-Jhanjhi'"
+    aria-label="See more projects on my GitHub"
+  >
+    ResearchGate
+  </button>
+</div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:examplemail@gmail.com">nooraminnawab@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/noor-ul-amin-jhanjhi-aa685b35b/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Noor Ul Amin Jhanjhi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
